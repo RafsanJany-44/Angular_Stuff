@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
+  
+  //declaring a var
+  title = 'This is Rafsan Jany';
+  name = 'rafsan jany'
+  
+  //declaring a function
+  getHim(){
+    return this.name
+  }
+  
+  //declaring  obj
+  dcit=
+  {
+    name : 'Hello this name',
+    role_code:'Owner'
+
+  }
+
+  // array orparation
+  arr
 }
