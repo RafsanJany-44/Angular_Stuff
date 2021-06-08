@@ -26,4 +26,11 @@ export class AppComponent {
 
   // array orparation
   arr=[1,2,3,4,5,6,7,8]
+
+  //parameter function from a unction and button
+
+  getName(janme: any){
+
+    alert(janme);
+  }
 }
