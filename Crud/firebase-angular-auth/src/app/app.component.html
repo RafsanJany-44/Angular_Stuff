@@ -1,15 +1,15 @@
-<div *ngIf='!SignedIn'>
+<in *ngIf='!SignedIn'>
   <h2>Sign Up</h2>
-  <input type='text #emailSignup'/>
-  <inoput type='text #passwordSignup'/>
+  <input type='text' #emailSignup></input>
+  <inoput type='text' #passwordSignup></input>
   <button (click)='onSignup(emailSignup.value,passwordSignup.value'>Sign Up</button>
 </div>
 
 <hr>
 <div *ngIf='!isSignedIn'>
   <h2>Sign Ip</h2>
-  <input type='text #email'/>
-  <inoput type='text #password'/>
+  <input type='text' #email></input>
+  <inoput type='text' #password></input>
   <button (click)='onSignin(emailSignup.value,passwordSignup.value'>Sign In</button>
 </div>
 <app-home *ngIf='isSignedIn' (isLogout)='handleLogout()'></app-home>
