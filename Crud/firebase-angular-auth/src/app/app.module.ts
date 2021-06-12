@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {AngularFireModule} from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
+import {AngularFireModule} from '@angular/fire'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FirebaseService } from './services/firebase.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { FirebaseService } from './services/firebase.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyAQkzi4fGlWX0x09x_WrFnj9K3UTjuk-EM",
       authDomain: "fir-anguler-auth.firebaseapp.com",
